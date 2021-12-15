@@ -1,0 +1,42 @@
+.item {
+  width: 7.9rem;
+  height: 7.9rem;
+  margin: .1rem;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: all .1s ease;
+  will-change: border;
+  border: .5px solid;
+  cursor: pointer;
+
+  &:hover {
+    border-radius: 5px;
+  }
+
+  & > img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.2);
+  }
+}
+
+.tooltip {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid white;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    top: calc(-5px - 1rem);
+  }
+}

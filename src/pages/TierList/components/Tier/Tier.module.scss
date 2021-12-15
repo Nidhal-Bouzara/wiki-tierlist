@@ -1,0 +1,25 @@
+.tier {
+  background-color: #181916;
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  margin: .1rem 0;
+  position: relative;
+  height: 100%;
+
+  .rank {
+    background-color: green;
+    width: 8rem;
+    min-height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem 1rem .5rem 0;
+  }
+}
